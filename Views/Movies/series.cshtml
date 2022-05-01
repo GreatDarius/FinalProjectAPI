@@ -1,0 +1,12 @@
+﻿@model FinalProjectAPI.Models.Series
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@foreach (Serie serie in Model.items)
+{
+    @(serie.fullTitle+" "+ serie.imDbRating)
+}

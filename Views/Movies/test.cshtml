@@ -1,0 +1,12 @@
+﻿@model FinalProjectAPI.Models.Movies
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@foreach (Movie movie in Model.items)
+{
+    @(movie.fullTitle+" "+ movie.imDbRating)
+}

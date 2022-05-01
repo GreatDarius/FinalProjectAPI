@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BullFlix</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FinalProjectAPI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- The Nav Bar Section -->
+        <div class="container">
+            <div class="row" style="width:100px;">
+                <div class="col">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <a asp-controller="Home" asp-action="Index" class="navbar-brand">IMDB RATING APP</a>
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index"  id="links-items">Home</a>
+                                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="topmovies" id="links-items">Top 10 Movies</a>
+                                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="topshows" id="links-items">Top 10 Series</a>
+                                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="aboutus" id="links-items">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="light" id="footer">
+            <div class="subfooter">
+                <div class="container">
+                    <div class="col-md-12 ">
+                        <p class="footer2">
+                            <div class="col-md-2 nopad-foot" id="footbottom">
+                                <div class="space-bottom hidden-lg hidden-md"></div>
+                            </div>
+                            <div class="col-md-10 nopad-foot">
+                                <div><a asp-controller="Home" asp-action="Index" target="index.html">Home</a>  |  <a asp-controller="Home" asp-action="topmovies" target="topmovies.html">Top 10 Movies</a>  |  <a asp-controller="Home" asp-action="topshows" target="topshows.html">Top 10 TV shows</a>  |  <a asp-controller="Home" asp-action="aboutus" target="aboutus.html">About Us</a></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

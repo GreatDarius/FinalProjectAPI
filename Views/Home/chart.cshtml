@@ -1,0 +1,120 @@
+﻿
+@{
+            ViewData["Title"] = "chart";
+
+}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <meta charset="utf-8" />
+    <title>Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body style="background-color:aqua;">
+    <div class="content" style="">
+        <div class="container" style="padding-top:50px; ">
+            <div class="row" style="padding-top:50px;">
+                <div class="col col-md-12" style="text-align: justify; text-justify: inter-word; ">
+                    <h1 style="text-align:center">Movie Genre break down</h1>
+                    <p>Movie genres are stylistic categories where a particular movie can be placed based on the setting, characters, plot, mood, tone, and theme. A film's main genre category will be based on where the majority of the content lands. A sub-genre is a smaller category that fits inside a particular genre. Often this is a mixture of two separate genres. Genres and sub-genres change over time and are informed by one another. 
+                    Below chart shows the number of movies in each genre.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style=" padding-top: 50px; padding-bottom:450px;">
+            <div class="row">
+                <div class="col col-md-12">
+                        <div id="chartContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript">
+ 
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer", {
+				theme: "light2",
+				animationEnabled: true,
+				title: {
+					text: "Movie Genre Break Down"
+				},
+				subtitles: [
+					{ text: "Number o movies in each Genre" }
+				],
+				data: [
+				{
+					type: "column", //change type to bar, line, area, pie, etc
+					//dataPoints: 
+                                        //Uncomment below line to add data coming from the controller.
+					dataPoints: @Html.Raw(ViewBag.DataPoints),
+				}
+				]
+			});
+			chart.render();
+		};
+    //    $(function () {
+    //    var labels = '<%TempData["genreAll"] %>';
+    //    var datas = '<%TempData["Total"] %>';
+    //    var labelsArray = new Array();
+    //    var dataArray = new Array();
+    //    for (var i = 0; i < labels.split(',').length; i++) {
+    //        labelsArray.push(labels.split(',')[i]);
+    //        dataArray.push(datas.split(',')[i]);
+    //    }
+    //    var ctx1 = document.getElementById("lineChart").getContext('2d');
+    //    var lineChart = new Chart(ctx1, {
+    //        type: 'bar',
+    //        data: {
+    //            labels: labelsArray,
+    //            datasets: [{
+    //                label: '% Daily Sampling by Platform',
+    //                backgroundColor: '#3EB9DC',
+    //                data: dataArray
+    //            }]
+    //        },
+    //        options: {
+    //            tooltips: { mode: 'index', intersect: false },
+    //            responsive: true,
+    //            scales: {
+    //                xAxes: [{ stacked: true}],
+    //                yAxes: [{ stacked: true}]
+    //            }
+    //        }
+    //    });
+    //});
+        //new Chart(document.getElementById("barchartexample"), {
+        //    type: 'bar',
+        //    data: {
+        //        labels: ["null", "Action", "Drama", "Fiction", "Animation","Horror", "Thriler", "Comedy","Historic", "Mystery", "Romantic"],
+        //        datasets: [
+        //            {
+        //                label: ,
+        //                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#F43BF9", "#A4405A", "#1B0D58", "#0028EC", "#5C33C3"],
+        //                data: generecounts
+        //            }
+        //        ]
+        //    },
+        //    options: {
+        //        legend: { display: false },
+        //        title: {
+        //            display: true,
+        //            text: 'Number of movies per Genre'
+        //        }
+        //    }
+        //});
+    </script>
+
+</body>
+</html>

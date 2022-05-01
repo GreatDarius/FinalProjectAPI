@@ -1,0 +1,279 @@
+﻿    
+@{
+        ViewData["Title"] = "Index";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <style>
+        #links-items:hover {
+            color: red;
+        }
+
+        .content {
+            overflow: auto;
+            position: relative;
+        }
+/*
+            .content::before {
+                content: "";
+                position: fixed;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                display: block;
+                background-image: url('./img/Superman.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                -webkit-filter: blur(5px);
+                -moz-filter: blur(5px);
+                -o-filter: blur(5px);
+                -ms-filter: blur(5px);
+                filter: blur(5px);
+                min-height:30vh;
+            }
+*/
+    </style>
+</head>
+<body style="background-color:aqua;">
+    <div class="content" style="padding-top:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:55px;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <img class="d-block w-100" src="./img/Batman1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>DC Movies</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <img class="d-block w-100" src="./img/Superman1.jpg" alt="First slide" style="">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Marvel Movies</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <img class="d-block w-100" src="./img/Wonderwoman.jpg" alt="First slide" style="">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Other Franchises</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-left:155px; padding-top:50px;">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <h1>
+                    OVERVIEW
+                </h1>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 50px; padding-top: 50px; padding-right: 50px; text-align: justify; text-justify: inter-word; ">
+            <div class="col">
+                The U.S. media and entertainment (M&E) industry is the largest in the world. At $717 billion, it represents a third of the global M&E industry,
+                and it includes motion pictures, television programs and commercials, streaming content, music and audio recordings, broadcast, radio, book publishing,
+                video games, and ancillary services and products. The U.S. industry is expected to reach more than $825 billion by 2023,
+                according to the 2018-2023 Entertainment & Media Outlook by PriceWaterhouseCoopers (PwC).
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 50px; padding-top: 50px; padding-right: 50px; text-align: justify; text-justify: inter-word; ">
+            <div class="col">
+                <div style="background-image: url('./img/tvshows1.png'); background-repeat:no-repeat; background-size: cover;">
+                    <div class="section clearfix primary-bg-ita-img">
+                        <div>
+                            <div class="row content">
+                                <div class="containerInternal enforceHeight" id="a17t0000000Com3AAC">
+                                    <div class="col-md-12" id="a17t0000000Com3AAC_a0zt0000000CdSBAA0">
+                                        <div class="">
+                                            <h2 class="text-center">Industry Subsectors</h2>
+                                            <p class="text-center lead"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" id="a17t0000000Com3AAC_a0zt0000000CdAqAAK">
+                                        <div class="">
+                                            <p class="text-center lead" style=" color: white; ">
+                                                <div style=" color: black; ">
+                                                    <b>Filmed Entertainment (Motion Pictures, Television, and Video)</b><br>The U.S. filmed entertainment industry encompasses films,
+                                                    movie theaters, TV subscriptions and electronic home video production, and distribution and consumption.
+                                                    Box office receipts are expected to surpass $11 billion in 2019 (this figure includes projected cinema advertising earnings of $991 million).
+                                                    TV and home video earnings are expected to reach $96 billion in 2019. Due to the rapid expansion of streaming video on demand (SVOD),
+                                                    television subscriptions are expected to experience a slight decline (to $91 billion) through 2019.
+                                                    <br> <br>Box office numbers are expected to grow as theaters adopt digital screens, increase ticket prices, diversify concession options
+                                                    , offer consumer products such as movie or brand related merchandise, and offer membership discounts to attract viewership.
+                                                    Traditionally the film industry consisted of multinational umbrella corporations, major studios, and independent studios or “indies.&quot;
+                                                    Today, multi-channel networks engage in the filmed entertainment sector and SVOD platforms are major drivers in the filmed entertainment sector.
+                                                    <br> <br>Drawing on formidable strengths, the U.S. film industry has a proven ability to produce films that generate hundreds of millions of dollars,
+                                                    including revenues from distribution across strong domestic and international networks. Success in the industry is based on creativity and financing,
+                                                    and the industry is largely self-regulated. The U.S. market has a large talent pool of writers, actors, producers, directors and technical experts,
+                                                    and is home to a variety of film crews, post-production firms, backdrops, and infrastructure to support production.
+                                                    U.S. filmmakers also receive critical protections for their intellectual property.
+                                                    <br> <br>Many of the leading motion picture studios are part of larger media conglomerates that often include television,
+                                                    video and streaming services, music services, newspaper, cable and magazine segments.
+                                                    The U.S. filmed entertainment sector enjoyed a trade surplus of $10.3 billion in 2016 (latest available data),
+                                                    which was roughly 4 percent of the total U.S. private sector services trade surplus that year.
+                                                    <br> <br>The industry offers attractive possibilities for international companies, both large and small, and provides film production tax incentives.
+                                                    With the shift toward digital production and distribution, foreign firms are continually seeking out U.S. digital and animation expertise and new formats.
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 50px; padding-top: 50px; padding-right: 50px; text-align: justify; text-justify: inter-word; ">
+            <div class="col">
+                <div style="background-image: url('./img/music1.png'); background-repeat:no-repeat; background-size: cover;">
+                    <div class="section clearfix secondary-bg-ita-img">
+                        <div>
+                            <div class="row content">
+                                <div class="containerInternal enforceHeight" id="a17t0000000obQ5AAI">
+                                    <div class="col-md-12" id="a17t0000000obQ5AAI_a0zt0000000ZlWvAAK">
+                                        <div class="">
+                                            <p class="text-center lead">
+                                                <div>
+                                                    <b>Music</b><br>The U.S. recorded music industry (including concerts and touring) grew to $22 billion in 2019.
+                                                    Collectively, it is the largest global music market. Aside from contracting physical music sales, all segments of recorded music are up,
+                                                    including digital, streaming, and sync licensing. Since overtaking physical music sales in 2014,
+                                                    digital sales have helped the music industry adapt to a fast-changing entertainment landscape (royalties are expected to reach $1.1 billion in 2019).
+                                                    Live and recorded music sales are rising, and digitally recorded music is expected to grow just under $1 billion in 2019. Many companies in the industry have diversified,
+                                                    signing sync deals with vertical businesses for TV ads, in-flight entertainment, satellite radio, restaurants, touring, live entertainment, and merchandise.
+                                                    The United States also has the world’s largest performance rights market and earns half of global sync revenues. 
+                                                    <br> <br>Digital technologies have revolutionized the music industry by creating high quality, low-cost recording technologies and digital distribution,
+                                                    along with the proliferation of devices to download and listen to music. Future industry growth is likely to come from diversified services as they capitalize on vertical
+                                                    business opportunities to license brand name products and services, packaging consumer experiences around touring and live music,
+                                                    bundling music services with other online content services and more. Streaming services will continue to grow and offer more personalized services for consumers.
+                                                    The consumer has more power to influence digital entertainment industries than ever before.
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 50px; padding-top: 50px; padding-right: 50px; text-align: justify; text-justify: inter-word; ">
+            <div class="col">
+                <div style="background-image: url(./img/books.png); background-repeat:no-repeat; background-size: cover;">
+                    <div class="section clearfix primary-bg-ita-img">
+                        <div>
+                            <div class="row content">
+                                <div class="containerInternal enforceHeight" id="a17t0000000obQAAAY">
+                                    <div class="col-md-12" id="a17t0000000obQAAAY_a0zt0000000ZlXPAA0">
+                                        <div class="">
+                                            <p class="text-center lead">
+                                                <div>
+                                                    <b>Book Publishing</b><br>The U.S. publishing sector, which includes both physical and digital books,
+                                                    is the largest in the world: $38 billion in 2018. Publishing is measured across three major segments: professional, educational,
+                                                    and consumer publishing. Consumer books cover the largest market share by far, followed by educational and then professional books.
+                                                    By 2023, digital publishing will account for nearly 60 percent of all U.S. publishing. <br> <br>Consumer demand and reading experiences
+                                                    continue to evolve. For example, online retailer Amazon has opened physical book stores (for both physical and e-books). In addition to
+                                                    e-readers, which are designed to only display e-books, smartphones, and tablets bring entire libraries (and most human knowledge) to users&#39;
+                                                    fingertips. More than 80 percent of American adults own a smartphone, and more than half own a tablet and/or an e-reader. (Pew) 
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 50px; padding-top: 50px; padding-right: 50px; text-align: justify; text-justify: inter-word; ">
+            <div class="col">
+                <div style="background-image: url('./img/game.png'); background-repeat:no-repeat; background-size: cover;">
+                    <div class="section clearfix secondary-bg-ita-img">
+                        <div>
+                            <div class="row content">
+                                <div class="containerInternal enforceHeight" id="a17t0000000obQFAAY">
+                                    <div class="col-md-12" id="a17t0000000obQFAAY_a0zt0000000ZlXyAAK">
+                                        <div class="">
+                                            <p class="text-center lead">
+                                                <div style="color:white">
+                                                    <b>Video Games</b><br>The U.S. gaming industry accounts for a significant amount of the M&amp;E industry,
+                                                    and revenues are expected to reach nearly $26 billion in 2019. Today’s consumers have access to multiple devices for gaming, including PCs,
+                                                    mobile phones, digital or physical consoles, and tablets. The sector is comprised of: physical, digital, and online games; mobile apps;
+                                                    and virtual and augmented reality (VR/AR). Electronic sports, also known as &quot;eSports&quot; or &quot;e-sports&quot;,
+                                                    includes professional gaming, in which players compete before a live audience, and the industry is growing quickly: $281 billion in 2019,
+                                                    more than double its size in 2016. In 2019, eSport media rights earnings will have quadrupled to $69 million in that same period.
+                                                    (NOTE: eSports earnings data are currently available for about ten key markets worldwide). 
+                                                    <br> <br>The industry is constantly innovating and bringing new applications to market.
+                                                    VR is the use of digital technology to replace reality with a complete and realistic,
+                                                    immersive simulation, while AR is interaction with computer-generated content overlaid with the &quot;real world&quot;.
+                                                    Using VR/AR, U.S. developers and scientists are producing cutting-edge solutions in healthcare, education, online shopping,
+                                                    and entertainment. VR gaming has grown more than 14 percent since 2018.
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
